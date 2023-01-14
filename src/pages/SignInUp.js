@@ -43,12 +43,12 @@ function SignInUp() {
     }
 
     return(
-      <div className='w-11/12 bg-HBCbrown mb-8 h-2/3 p-5 rounded-lg '>
+      <div className='w-11/12 bg-HBCbrown mb-8 h-[450px] p-5 rounded-lg sm:w-1/2 md:h-[600px]'>
 
         <div className='w-full flex justify-between items-center mb-5'>
-          <div className='flex flex-wrap'>
-            <h1 className='text-HBCoffwhite text-3xl font-bold w-full basis-full'>Hunters Basecamp</h1>
-            <p className='mt-2 text-gray-300'>Create an account</p>
+          <div className='flex flex-wrap md:justify-center'>
+            <h1 className='text-HBCoffwhite text-3xl font-bold w-full basis-full lg:w-96'>Hunters Basecamp</h1>
+            <p className='mt-2 text-gray-300 text-lg'>Create an account</p>
           </div>
 
           <figure 
@@ -58,29 +58,29 @@ function SignInUp() {
           </figure>
         </div>
         
-        <form className='flex flex-wrap h-3/4 justify-start content-start w-full'>
-          <div className='basis-full'>
+        <form className='flex flex-wrap h-3/4 justify-start content-start w-full sm:justify-center md:mt-24'>
+          <div className='basis-full sm:text-center'>
             <input type='text' placeholder='Name'
             onChange={(e)=>{setUserName(e.target.value)}}  
-            className='bg-HBCLightBrown border-b border-HBCgray p-1 rounded-lg shadow-xl'></input>
+            className='bg-HBCLightBrown border-b border-HBCgray p-1 rounded-lg shadow-xl sm:w-1/2'></input>
           </div>
 
-          <div className='basis-full mt-3'>
+          <div className='basis-full mt-3 sm:text-center md:mt-8'>
             <input type='text' placeholder='Email'
             onChange={(e)=>{setEmail(e.target.value)}}  
-            className='bg-HBCLightBrown border-b border-HBCgray p-1 rounded-lg shadow-xl'></input>
+            className='bg-HBCLightBrown border-b border-HBCgray p-1 rounded-lg shadow-xl sm:w-1/2'></input>
           </div>
 
-          <div className='basis-full mt-3'>
+          <div className='basis-full mt-3 sm:text-center md:mt-8'>
             <input type='text' placeholder='Password' 
             onChange={(e)=>{setPassword(e.target.value)}} 
-            className='bg-HBCLightBrown border-b border-HBCgray p-1 rounded-lg shadow-xl'></input>
+            className='bg-HBCLightBrown border-b border-HBCgray p-1 rounded-lg shadow-xl sm:w-1/2'></input>
           </div>
 
-          <div className='basis-full mt-3'>
+          <div className='basis-full mt-3 sm:text-center md:mt-8'>
             <input type='text' placeholder='Confirm Password'
             onChange={(e)=>{setConfirmPassword(e.target.value)}} 
-            className='bg-HBCLightBrown border-b border-HBCgray p-1 rounded-lg shadow-xl'></input>
+            className='bg-HBCLightBrown border-b border-HBCgray p-1 rounded-lg shadow-xl sm:w-1/2'></input>
           </div>
 
           <button
