@@ -44,7 +44,7 @@ function Index() {
 
   return (
     <div className='h-screen'>
-        <div className='h-full w-full bg-black px-2 pt-3'>
+        <div className='h-full w-full bg-HBCgray px-2 pt-3'>
             <animated.figure 
             style={LogoFade}
             className='m-0 absolute top-12 right-3 h-24 w-24'>
@@ -52,18 +52,18 @@ function Index() {
             </animated.figure>
             <animated.h1
             style={headingSpring}
-            className='text-5xl font-bold text-yellow-500 mt-8'
+            className='text-5xl font-bold text-HBCoffwhite mt-8'
             >Hunters Basecamp</animated.h1>
             <animated.p 
             style={contentSpring}
             className='text-white text-lg px-4 mt-12'>Welcome to Hunters Basecamp the ultimate destination for hunters across North America. Connect with fellow hunters, share your experiences, and discover new hunting spots with our comprehensive mapping tools. Network with other hunters through our forums and messaging features. Find the best hunting spots, get the latest weather forecast and hunting regulations, and even plan your next hunting trip.</animated.p>
             <animated.div 
             style={buttonAnimation}
-            className='flex w-full justify-evenly mt-12 bg-black'>
-                <Link to={'Signup'} className='bg-yellow-500 w-28 h-10 rounded-lg  flex justify-center items-center'>Signup</Link>
-                <Link to={'Login'}  className='bg-yellow-500 w-28 h-10 rounded-lg  flex justify-center items-center'>Login</Link>
+            className='flex w-full justify-evenly mt-12 bg-HBCgray'>
+                <Link to={'Signup'} className='bg-HBCpeach w-28 h-10 rounded-lg text-white flex justify-center items-center'>Signup</Link>
+                <Link to={'Login'}  className='bg-HBCpeach w-28 h-10 rounded-lg text-white flex justify-center items-center'>Login</Link>
             </animated.div>
-            <div className='bg-black h-full relative z-20'></div>     
+            <div className='bg-HBCgray h-full relative z-20'></div>     
         </div>
     </div>
   )
